@@ -23,10 +23,15 @@ Types of Communication Protocol:
    4. It uses Start bit and Stop bit before and after each transmission of data.
    5. It has Baud rate that defines the speed at which data is transmitted and both transmitter and receiver should be on same baud rate.
    6. UART is highly configurable.
-   7.  UART communication is reliable for short to moderate distances.
-   8.  UART is commonly used in embedded systems for communication between microcontrollers, sensors, display modules, GPS modules, and other peripheral devices.
+   7. UART communication is reliable for short to moderate distances.
+   8. UART is commonly used in embedded systems for communication between microcontrollers, sensors, display modules, GPS modules, and other peripheral devices.
    9. It is also used for communication with computers and other external equipment.
+      Programming Approach
+      Bit Banging:
+      Bit banging is a method of serial communication used in microcontroller and embedded systems programming. It involves manually controlling the state of           individual digital pins to transmit or receive data without relying on dedicated hardware communication peripherals like UART, SPI, or I2C. Instead, the          microcontroller or embedded system's firmware directly manipulates the pins to send or receive individual bits of data.
 
+      UART Peripherals:
+      It ia method in which 
    ## I2C (Inter-Integrated Circuit)
 
    1. It is a Synchronous Comunication Protocol, invented by Philips.
