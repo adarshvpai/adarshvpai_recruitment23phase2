@@ -31,7 +31,27 @@ Types of Communication Protocol:
       Bit banging is a method of serial communication used in microcontroller and embedded systems programming. It involves manually controlling the state of           individual digital pins to transmit or receive data without relying on dedicated hardware communication peripherals like UART, SPI, or I2C. Instead, the          microcontroller or embedded system's firmware directly manipulates the pins to send or receive individual bits of data.
 
       UART Peripherals:
-      It ia method in which 
+      It ia method in which the Transmit register transfers full data to shift register and the shift register and it transfers this data byte by byte to the
+      next device were the process is called parallel in serial out. The shift register of the next device collect the data one by one and transfer it to the
+      receiver register all at once were the process is called serial in parallel out.
+
+      UART Configuration
+
+      1. Clock configuration
+      2. Data Loading
+      3. Data Transmission
+      4. Monitor data: Looping Method or Interrupt Method
+
+      Advantages of UART:
+      - Easy to interface
+      - Less Hardware
+      - Less Software Complications
+
+      Disadvantages of UART
+      - Synchronizing Baud Rate
+      - Only two devices can be connected
+      - No Acknowledgement
+        
    ## I2C (Inter-Integrated Circuit)
 
    1. It is a Synchronous Comunication Protocol, invented by Philips.
@@ -45,7 +65,22 @@ Types of Communication Protocol:
    9. I2C supports multiple clock speeds, such as standard mode (100 kbps), fast mode (400 kbps), and high-speed mode (up to 3.4 Mbps)
    10. I2C is suitable for short-distance communication within a single board or between closely located devices due to its limited range.
    11. I2C is relatively simple compared to other communication protocols like SPI or UART.
+   Bus Arbitration:
+   It is the process of determining which device on the I2C bus gets to transmit data or initiate a communication transaction when multiple devices are connected to the same bus. I2C is a multi-master communication protocol, which means that multiple devices can be connected to the same bus, and they can all act as both masters and slaves. As a result, there needs to be a way to resolve conflicts when multiple devices try to communicate simultaneously.
+   Clock Stretching:
+   It a feature that allows one of the devices on the bus, typically the slave device, to temporarily hold the SCL (Serial Clock) line low to slow down the master device's clock when it needs more time to process data. This helps in preventing data overrun and ensuring reliable communication between devices with potentially different processing speeds or response times.
+   Advantages of I2C
+   - Two wires only
+   - Multimater Compatibility
+   - Better Error Handling
+   - Different mode flexibility for Slave
 
+   Disadvantages of I2C
+   - Less Flexibility for Slave address
+   - Complexity of Firmware
+   - Increased Data Overhead
+   - Hardware Limitations
+   - Bus Topology
    ## SPI (Serial Perpheral Interface)
 
    1. It is a Synchronous Comunication Protocol.
