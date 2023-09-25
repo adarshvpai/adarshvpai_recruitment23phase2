@@ -16,7 +16,7 @@ Types of Communication Protocol:
 1. Synchronous Comunication Protocol(SPI,I2C)
 2. Asynchronous Comunication Protocol(UART,CAN)
 
-   ## UART (Univeersal Asynchronous Receiver Transmitter)
+   ## UART (Universal Asynchronous Receiver Transmitter)
    1. It is an Asynchronous Communication Protocol.
    2. Is ia Ad-Hoc type of Topology.
    3. It consist of two main components:Transmitter and Receiver.
@@ -95,6 +95,17 @@ Types of Communication Protocol:
    9. SPI is suitable for short-distance communication, typically within a single PCB (Printed Circuit Board) or between closely located devices.
    10. SPI has minimal protocol overhead since it does not include addressing or acknowledgment signals.
 
+   Advantages of SPI
+   - Low Power Consumption
+   - SPI is faster than I2C
+   - Easy to Interface
+   - Different Modes of Transmission
+
+   Disadvantages of SPI
+   - Atleast 4 connections are required
+   - Does not support Multimaster
+   - More GPIOs for more Slaves
+     
    ## CAN (Control Area Network)
 
    1. It is an Asynchronous Communication Protocol, invented by Robert Bosch.
@@ -111,7 +122,7 @@ Types of Communication Protocol:
    12. CAN is widely used in the automotive industry for various applications, including engine control, vehicle diagnostics, and infotainment systems.
    13. CAN is standardized under ISO 11898, which defines the physical and data-link layer specifications.
    14. CAN is known for its high reliability and robustness, making it suitable for demanding environments where noise and harsh conditions are common.
-    
+
 ## Arduino Basic Projects
 
    ## 1. Ultrasonic Interface
