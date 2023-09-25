@@ -54,22 +54,22 @@ Types of Communication Protocol:
    9. SPI is suitable for short-distance communication, typically within a single PCB (Printed Circuit Board) or between closely located devices.
    10. SPI has minimal protocol overhead since it does not include addressing or acknowledgment signals.
 
-## CAN (Control Area Network)
+   ## CAN (Control Area Network)
 
-1. It is an Asynchronous Communication Protocol, invented by Robert Bosch.
-2. CAN typically uses a two-wire bus system: one wire for transmitting data (CAN-High or CAN-H) and one wire for receiving data (CAN-Low or CAN-L).
-3. It helps to reduce electromagnetic interference (EMI) and ensures reliable data transfer.
-4. CAN supports a multi-master architecture, meaning that multiple ECUs can simultaneously transmit and receive data on the same bus without a centralized master controller.
-5. CAN offers deterministic communication, meaning that messages have a predictable and guaranteed transmission time.
-6. CAN uses a message-based communication model. Data is organized into frames, with each frame containing an identifier (ID) that defines the message's priority and content.
-7. CAN uses a non-destructive bitwise arbitration mechanism to determine which node gets to transmit data when multiple nodes attempt to send messages simultaneously.
-8. CAN incorporates built-in error detection and handling mechanisms. Nodes monitor the bus for errors such as bit errors, frame errors, and other fault conditions. When errors occur, nodes can retransmit data or take appropriate actions.
-9. CAN allows for message prioritization using the CAN identifier (ID). Lower ID values represent higher-priority messages, which ensures critical data is transmitted before less critical data.
-10. CAN is extensible and scalable, making it suitable for a wide range of applications. CAN networks can range from a few nodes to hundreds or even thousands of nodes interconnected through bridges or gateways.
-11. Can network can continue to operate even if one or more nodes fail.
-12. CAN is widely used in the automotive industry for various applications, including engine control, vehicle diagnostics, and infotainment systems.
-13. CAN is standardized under ISO 11898, which defines the physical and data-link layer specifications.
-14. CAN is known for its high reliability and robustness, making it suitable for demanding environments where noise and harsh conditions are common.
+   1. It is an Asynchronous Communication Protocol, invented by Robert Bosch.
+   2. CAN typically uses a two-wire bus system: one wire for transmitting data (CAN-High or CAN-H) and one wire for receiving data (CAN-Low or CAN-L).
+   3. It helps to reduce electromagnetic interference (EMI) and ensures reliable data transfer.
+   4. CAN supports a multi-master architecture, meaning that multiple ECUs can simultaneously transmit and receive data on the same bus without a centralized master controller.
+   5. CAN offers deterministic communication, meaning that messages have a predictable and guaranteed transmission time.
+   6. CAN uses a message-based communication model. Data is organized into frames, with each frame containing an identifier (ID) that defines the message's priority and content.
+   7. CAN uses a non-destructive bitwise arbitration mechanism to determine which node gets to transmit data when multiple nodes attempt to send messages simultaneously.
+   8. CAN incorporates built-in error detection and handling mechanisms. Nodes monitor the bus for errors such as bit errors, frame errors, and other fault conditions. When errors occur, nodes can retransmit       data or take appropriate actions.
+   9. CAN allows for message prioritization using the CAN identifier (ID). Lower ID values represent higher-priority messages, which ensures critical data is transmitted before less critical data.
+   10. CAN is extensible and scalable, making it suitable for a wide range of applications. CAN networks can range from a few nodes to hundreds or even thousands of nodes interconnected through bridges or          gateways.
+   11. Can network can continue to operate even if one or more nodes fail.
+   12. CAN is widely used in the automotive industry for various applications, including engine control, vehicle diagnostics, and infotainment systems.
+   13. CAN is standardized under ISO 11898, which defines the physical and data-link layer specifications.
+   14. CAN is known for its high reliability and robustness, making it suitable for demanding environments where noise and harsh conditions are common.
     
 ## Arduino Basic Projects
 
@@ -84,48 +84,48 @@ Types of Communication Protocol:
    7. Necessary Code for the project was written in the Code tab of AU.
    8. When the simulation was turned on the distance of the object was displayed on the Serial Monitor.
 
-  ## 2. Light Intensity Measurement using LDR
+   ## 2. Light Intensity Measurement using LDR
 
-  1. Simple LDR circuit with Arduino and Multimeter to measure the intesity of the light.
-  2. Components required: Arduino Uno(AU), Photoresistor(LDR), Red LED, Voltage multimeter,2 1k ohm resistor, Connecting Wires.
-  3. Connect Analog A0 pin of AU to LDR terminal 1.
-  4. Connect 5V of Au to LDR terminal 2.
-  5. Connect GND of LDR to terminal 2 of LDR, cathode of Red LED and negative of multimeter.
-  6. Connect 1k ohm resistor between GND of AU and terminal 2 of Red LED.
-  7. Connect Digital pin D9 to anode of Red LED and positive of multimeter.
-  8.  Necessary Code for the project was written in the Code tab of AU.
-  9.  When the simulation was turned on we can adjust the light above the photoresistor which will change the value in multimeter and the intensity of the Red LED.
+   1. Simple LDR circuit with Arduino and Multimeter to measure the intesity of the light.
+   2. Components required: Arduino Uno(AU), Photoresistor(LDR), Red LED, Voltage multimeter,2 1k ohm resistor, Connecting Wires.
+   3. Connect Analog A0 pin of AU to LDR terminal 1.
+   4. Connect 5V of Au to LDR terminal 2.
+   5. Connect GND of LDR to terminal 2 of LDR, cathode of Red LED and negative of multimeter.
+   6. Connect 1k ohm resistor between GND of AU and terminal 2 of Red LED.
+   7. Connect Digital pin D9 to anode of Red LED and positive of multimeter.
+   8.  Necessary Code for the project was written in the Code tab of AU.
+   9.  When the simulation was turned on we can adjust the light above the photoresistor which will change the value in multimeter and the intensity of the Red LED. 
 
-  ## 3. Temperature Sensor
+   ## 3. Temperature Sensor
+ 
+   1. A temperature sensor circuit with smoke sensor and buzzer
+   2. Components required: Arduino Uno(AU), Temperatur Sensor(TMP36), Gas Sensor, Piezo Buzzer, Red LED, 1k ohm resistor, Connecting wires
+   3. Connect GND of Au to GND of TMP, Negative of buzzer and H1,A2 port of Gas Sensor, cathode of Red LED.
+   4. Connect 5V of AU to Power of TMP, B1,H@,B2 of Gas Sensor.
+   5. Connect 1k ohm resistor in between GND and A2 of Gas Sensor.
+   6. Connect the Analog pin A0 to A1 of Gas sensor.
+   7. Connect the Analog pin A1 to Vout of TMP.
+   8. Connect the Digital pin D13 to anode of Red LED.
+   9. Connect !k ohm resistor in between D13 pin and anode of Red LED.
+   10. Connect the Digital pin D7 to positive of Piezo Buzzer.
+   11. Necessary Code for the project was written in the Code tab of AU.
+   12. When the simulation was turned on we can adjust the temperature above the TMP36 and we can adjust the smoke above the gas sensor
+   13. The Temp Reading and Smoke Reading will be displayed in the Serial Monitor and if the Gas reading goes above 100 the piezo buzzer will turn on. 
 
-  1. A temperature sensor circuit with smoke sensor and buzzer
-  2. Components required: Arduino Uno(AU), Temperatur Sensor(TMP36), Gas Sensor, Piezo Buzzer, Red LED, 1k ohm resistor, Connecting wires
-  3. Connect GND of Au to GND of TMP, Negative of buzzer and H1,A2 port of Gas Sensor, cathode of Red LED.
-  4. Connect 5V of AU to Power of TMP, B1,H@,B2 of Gas Sensor.
-  5. Connect 1k ohm resistor in between GND and A2 of Gas Sensor.
-  6. Connect the Analog pin A0 to A1 of Gas sensor.
-  7. Connect the Analog pin A1 to Vout of TMP.
-  8. Connect the Digital pin D13 to anode of Red LED.
-  9. Connect !k ohm resistor in between D13 pin and anode of Red LED.
-  10. Connect the Digital pin D7 to positive of Piezo Buzzer.
-  11. Necessary Code for the project was written in the Code tab of AU.
-  12. When the simulation was turned on we can adjust the temperature above the TMP36 and we can adjust the smoke above the gas sensor
-  13. The Temp Reading and Smoke Reading will be displayed in the Serial Monitor and if the Gas reading goes above 100 the piezo buzzer will turn on.
-
-  ## 4. Password Protected Security System.
-
-  1. It is a Password protected System which need password to enter.
-  2. Components Required: Arduino Uno(AU), Keypad 4X4, Red LED, Green LED, Piezo Buzzer, 2 1k ohm resistor, Connecting Wires.
-  3. Connect GND of AU to cathode of Red LED, cathode of Green LED, negativ of Piezo Buzzer.
-  4. The 1k resistors are connected between GNd of Au and both of Green LED and Red LED.
-  5. The Digital pins D2,D3,D4,D5,D6,D7,D8,D9 are connected to Column 4,3,2,1 pins and Row 4,3,2,1 pins
-  6. The Digital pin D10 is connected to anode of Red LED.
-  7. The Digital pin D11 is connected to anode of Green LED.
-  8. The Digital pin D12 is connected to positive of Piezo Buzzer.
-  9. Necessary Code for the project was written in the Code tab of AU.
-  10. When the simulation was turned on in Serial monitor a message is displayed to enter the password.
-  11. If we enter the correct password the Green LED will light up.
-  12. If we enter the wrong password the Red LED will light up and the Buzzer will turn on.
+   ## 4. Password Protected Security System.
+ 
+   1. It is a Password protected System which need password to enter.
+   2. Components Required: Arduino Uno(AU), Keypad 4X4, Red LED, Green LED, Piezo Buzzer, 2 1k ohm resistor, Connecting Wires.
+   3. Connect GND of AU to cathode of Red LED, cathode of Green LED, negativ of Piezo Buzzer.
+   4. The 1k resistors are connected between GNd of Au and both of Green LED and Red LED.
+   5. The Digital pins D2,D3,D4,D5,D6,D7,D8,D9 are connected to Column 4,3,2,1 pins and Row 4,3,2,1 pins
+   6. The Digital pin D10 is connected to anode of Red LED.
+   7. The Digital pin D11 is connected to anode of Green LED.
+   8. The Digital pin D12 is connected to positive of Piezo Buzzer.
+   9. Necessary Code for the project was written in the Code tab of AU.
+   10. When the simulation was turned on in Serial monitor a message is displayed to enter the password.
+   11. If we enter the correct password the Green LED will light up.
+   12. If we enter the wrong password the Red LED will light up and the Buzzer will turn on. 
 
 ## Arduino Challenges
    
