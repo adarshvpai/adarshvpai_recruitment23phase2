@@ -29,6 +29,8 @@
      techniques to infer information from the database indirectly.
   5.Prevention and Mitigation:Prepared Statements, Input Validation, Least Privilege, Error Handling, Web Application Firewall (WAF),Regular Updates.
 
+  ## Portfolio
+  Made a simple portfolio using HTML and CSS which contains Biodata and details of Project.
   ## picoCTF
   Power Cookie
      1. Visited the website mentioned there.
