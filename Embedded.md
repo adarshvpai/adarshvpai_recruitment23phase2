@@ -16,7 +16,7 @@ Types of Communication Protocol:
 1. Synchronous Comunication Protocol(SPI,I2C)
 2. Asynchronous Comunication Protocol(UART,CAN)
 
-   ## UART (Univeersal Asynchronous Receiver Transmitter
+   ## UART (Univeersal Asynchronous Receiver Transmitter)
    1. It is an Asynchronous Communication Protocol.
    2. Is ia Ad-Hoc type of Topology.
    3. It consist of two main components:Transmitter and Receiver.
@@ -54,10 +54,10 @@ Types of Communication Protocol:
    9. SPI is suitable for short-distance communication, typically within a single PCB (Printed Circuit Board) or between closely located devices.
    10. SPI has minimal protocol overhead since it does not include addressing or acknowledgment signals.
 
-## CAN ()
+## CAN (Control Area Network)
 
 1. It is an Asynchronous Communication Protocol, invented by Robert Bosch.
-2.  CAN typically uses a two-wire bus system: one wire for transmitting data (CAN-High or CAN-H) and one wire for receiving data (CAN-Low or CAN-L).
+2. CAN typically uses a two-wire bus system: one wire for transmitting data (CAN-High or CAN-H) and one wire for receiving data (CAN-Low or CAN-L).
 3. It helps to reduce electromagnetic interference (EMI) and ensures reliable data transfer.
 4. CAN supports a multi-master architecture, meaning that multiple ECUs can simultaneously transmit and receive data on the same bus without a centralized master controller.
 5. CAN offers deterministic communication, meaning that messages have a predictable and guaranteed transmission time.
