@@ -69,6 +69,7 @@ Types of Communication Protocol:
    It is the process of determining which device on the I2C bus gets to transmit data or initiate a communication transaction when multiple devices are connected to the same bus. I2C is a multi-master communication protocol, which means that multiple devices can be connected to the same bus, and they can all act as both masters and slaves. As a result, there needs to be a way to resolve conflicts when multiple devices try to communicate simultaneously.
    Clock Stretching:
    It a feature that allows one of the devices on the bus, typically the slave device, to temporarily hold the SCL (Serial Clock) line low to slow down the master device's clock when it needs more time to process data. This helps in preventing data overrun and ensuring reliable communication between devices with potentially different processing speeds or response times.
+   
    Advantages of I2C
    - Two wires only
    - Multimater Compatibility
