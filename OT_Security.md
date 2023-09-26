@@ -103,4 +103,20 @@ can also be referred to as the principle of minimal privilege (POMP) or the prin
 4. Use just in time privileges
 5. Make individual actions traceable
 6. Make it regular
+
+## Vulnerabilities Exploited in ICS
+
+1. Policy and Procedure Vulnerabilities
+2. Platform Configuration Vulnerabilities
+3. Platform Hardware Vulnerabilities
+4. Platform Software Vulnerabilities
+5. Malware Protection Vulnerabilities
+6. Network Configuration Vulnerabilities
+7. Network Hardware Vulnerabilities
+8. Network Perimeter Vulnerabilities
+9. Communication Vulnerabilities
+10. Wireless Connection Vulnerabilities
+11. Network Monitoring and Logging Vulnerabilities
+
+
    
