@@ -32,14 +32,14 @@
   ## Portfolio
   Made a simple portfolio using HTML and CSS which contains Biodata and details of Project.
   ## picoCTF
-  Power Cookie
+     Power Cookie
      1. Visited the website mentioned there.
      2. Used Inspect to get access to cookies.
      3. Changes the value of cookie from0 to 1.
      4. Reloaded the page.
      5. The flag was displayed on the screen.
 
-  SQL Direct
+    SQL Direct
     1. Connected to the given PostgreSQL server using the given password.
     2. Checked what all relations were there in the server.
     3. Displayed the content of the relation flag.
