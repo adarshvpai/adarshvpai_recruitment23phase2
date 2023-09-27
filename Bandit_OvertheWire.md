@@ -175,7 +175,7 @@
 
 11. ‘data5.bin’ seems to be another archive with a file called ‘data6.bin’. So extracted the file again using the command 'tar -xf data5.bin'.
 
-12. The file ‘data6.bin’ seems to be bzip2 compressed again.710
+12. The file ‘data6.bin’ seems to be bzip2 compressed again.
 
 13. ‘data6.bin.out’ shows another file name ‘data8.bin’ again. So extracted this file.
 
