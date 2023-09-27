@@ -473,7 +473,7 @@ y using the comman
 
 10. Used the command 'git branch' th find the branch.
 
-11. Used the command 'git branch -a' to find whart all branches are there.
+11. Used the command 'git branch -a' to find what all branches are there.
 
 12. Used the command 'git checkout dev' to change the branch to 'dev'.
 
