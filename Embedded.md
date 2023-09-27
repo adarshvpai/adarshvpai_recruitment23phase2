@@ -74,7 +74,7 @@ Types of Communication Protocol:
    
    Advantages of I2C
    - Two wires only
-   - Multimater Compatibility
+   - Multimaster Compatibility
    - Better Error Handling
    - Different mode flexibility for Slave
 
