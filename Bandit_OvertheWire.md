@@ -9,7 +9,7 @@
 
 1. Logged in to the Bandit0 server using the command 'ssh bandit0@bandit.labs.overthewire.org -p 2220' using the password 'bandit0' given in the website.
 
-2. It was given that the password for the next levelwas stored in a readme file.
+2. It was given that the password for the next level was stored in a readme file.
 
 3. Searched for the readme file using 'ls' command.
 
