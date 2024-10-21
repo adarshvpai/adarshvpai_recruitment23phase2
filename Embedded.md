@@ -2,7 +2,7 @@
 
 ## Basics of Arduino
 
-Arduino is tool that helps you control ```electronic``` stuff with code
+Arduino is tool that helps you control electronic stuff with code
 
    ## Arduino Trifecta
    
